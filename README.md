@@ -53,6 +53,7 @@ The schema includes the following tables:
 
 ## 🏗️ Project Structure
 rbac_project/
+├── ER diagram #ER diagram of the database schema
 ├── db/
 │ └── schema.sql # SQL schema for all tables
 ├── main.py # Creates SQLite DB using schema.sql
