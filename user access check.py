@@ -1,4 +1,5 @@
 import sqlite3
+from logger import activity_logs
 db="rdac.db"
 def has_access(user_name,permission_name):
     conn=sqlite3.connect(db)
@@ -15,8 +16,10 @@ def has_access(user_name,permission_name):
     result=cursor.fetchone()
     conn.close()
     if not result:
+        activity_logs(user[0],f"permission check {permission_name}",False)
         print(f"The user {user_name} does not have the {permission_name} permission")
         return False
     else:
+        activity_logs(user[0], f"permission check {permission_name}", True)
         print(f"The user {user_name} has the {permission_name} permission")
         return True
