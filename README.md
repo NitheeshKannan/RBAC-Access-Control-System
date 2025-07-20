@@ -65,3 +65,7 @@ rbac_project/
 │ ├── access.py # has_access() and action logging
 │ └── db_utils.py # DB connection and query helpers
 └── .gitignore # Ignore .db and cache files
+
+DEMO :
+<img width="741" height="867" alt="image" src="https://github.com/user-attachments/assets/78396b22-d24f-413b-bf49-64634d05fbfc" />
+
